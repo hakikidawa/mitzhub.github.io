@@ -1,8 +1,8 @@
 ---
 layout: page-fullwidth
 title: ""
-subheadline: "MiTz hub"
-teaser: " work in progress..."
+subheadline: ""
+teaser: " "
 permalink: "/about-us/"
 header:
    image_fullwidth: "header_roadmap_2.jpg"
@@ -10,17 +10,6 @@ header:
 <div class="row">
 <div class="medium-4 medium-push-8 columns" markdown="1">
 <div class="panel radius" markdown="1">
-**Table of Contents**
-{: #toc }
-*  TOC
-{:toc}
-</div>
-</div><!-- /.medium-4.columns -->
-
-
-
-<div class="medium-8 medium-pull-4 columns" markdown="1">
-{% include _improve_content.html %}
 
 ## About MiTz
 
@@ -30,22 +19,3 @@ header:
 To promote, facilitate and support the development of innovative and intelligence ICT solutions and services that address community challenges.
 
 ### Vision
-
-
-
-
-{% include _improve_content.html %}
-
-</div><!-- /.medium-8.columns -->
-</div><!-- /.row -->
-
- [1]: http://kramdown.gettalong.org/converter/html.html#toc
- [2]: {{ site.url }}/blog/
- [3]: http://srobbin.com/jquery-plugins/backstretch/
- [4]: #
- [5]: #
- [6]: #
- [7]: #
- [8]: #
- [9]: #
- [10]: #
