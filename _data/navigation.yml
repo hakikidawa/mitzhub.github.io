@@ -13,11 +13,6 @@
 - title: "Events"
   url: "/Events/"
   side: left
- 
-- title:Team
-  url: "/Team/"
-  side: left
- 
 
 - title: Blog
   url: "/blog/"
