@@ -30,3 +30,20 @@ header:
 To promote, facilitate and support the development of innovative and intelligence ICT solutions and services that address community challenges.
 
 ### Vision
+
+
+{% include _improve_content.html %}
+
+</div><!-- /.medium-8.columns -->
+</div><!-- /.row -->
+
+ [1]: http://kramdown.gettalong.org/converter/html.html#toc
+ [2]: {{ site.url }}/blog/
+ [3]: http://srobbin.com/jquery-plugins/backstretch/
+ [4]: #
+ [5]: #
+ [6]: #
+ [7]: #
+ [8]: #
+ [9]: #
+ [10]: #
