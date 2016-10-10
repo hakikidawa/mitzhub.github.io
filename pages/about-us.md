@@ -23,7 +23,8 @@ To promote, facilitate and support the development of innovative and intelligenc
 ### Vision
 
 
-
+</div><!-- /.medium-8.columns -->
+</div><!-- /.row -->
 
 
 
