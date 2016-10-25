@@ -1,11 +1,11 @@
 ---
 layout: page-fullwidth
-title: ""
-subheadline: ""
-teaser: " "
-permalink: "/about-us/"
+title: ''
+teaser: ' '
+permalink: /about-us/
 header:
-   image_fullwidth: "header_roadmap_2.jpg"
+  image_fullwidth: header_roadmap_2.jpg
+published: true
 ---
 
 
@@ -13,11 +13,11 @@ header:
 
 ## About MiTz
 
-*MiTz Hub* aim to provide vibrant and collaborative environment for young innovators and entrepreneurs to develop innovative and intellligence ICT solution and services that address community challenges and build sustainable technology businesses. It is  a place where technology entrepreneurs can interact, work, gain access to tools and expertise, deploy their solutions, and start and grow their businesses. MiTz hub provides the infrastructure necessary for the design, deployment and scaling of innovative and intelligence ICT applications and services. We believe that challenges and problems facing Tanzania’s community can be effectively and efficiently addressed by technological solution designed and developed in tanzania for tanzanian.
+*HakikiDawa* College of Informatics and Virtual Education (CIVE) of the University of Dodoma (UDOM), through the financial support of Tanzania Communications Regulatory Authority (TCRA), embarked on a three-year research on Applying Mobile Technology for Drugs Verification in Tanzania. The main objective of the research was to design, develop, implement and support a mobile technology-based system to secure the Tanzanian health sector .
 {: style="text-align: justify;"}
 
 ### Mission
-To promote, facilitate and support the development of innovative and intelligence ICT solutions and services that address community challenges.
+To promote, facilitate and support the development of innovative  ICT solutions and services that address Tanzania Health sector challenges.
 {: style="text-align: justify;"}
 
 ### Vision
@@ -26,7 +26,36 @@ To promote, facilitate and support the development of innovative and intelligenc
 </div><!-- /.medium-8.columns -->
 </div><!-- /.row -->
 
+<!-- Team members -->
+{% if site.data.team-members.size > 0 %}
+<section class="team-members">
+  <h2>Our Team</h2>
+  <div class="grid-container">
+    {% for member in site.data.team-members %}
+    {% comment %}Check whether total no. of staff members is odd / even and structure final member accordingly{% endcomment %}
+    {% assign columnMod = forloop.length | modulo:2 %}
+    {% if columnMod == 0 %}
+      {% cycle '<div class="row">', '' %}
+      <!-- Team member card -->
+      {% include staff-card.html columnClass='one-half col' %}<!-- End team member card -->
 
+      {% cycle '', '</div>' %}
+    {% else %}
+      {% unless forloop.last == true %}
+        {% cycle '<div class="row">', '' %}
+        <!-- Team member card -->
+        {% include staff-card.html columnClass='one-half col' %}<!-- End team member card -->
+
+        {% cycle '', '</div>' %}
+      {% else %}
+      <!-- Team member card -->
+        {% include staff-card.html columnClass='one-half col final-col' %}<!-- End team member card -->
+      {% endunless %}
+    {% endif %}
+  {% endfor %}
+  </div>
+</section>
+{% endif %}<!-- End team members -->
 
  [1]: http://kramdown.gettalong.org/converter/html.html#toc
  [2]: {{ site.url }}/blog/
