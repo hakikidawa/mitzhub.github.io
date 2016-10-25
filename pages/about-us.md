@@ -23,39 +23,38 @@ To promote, facilitate and support the development of innovative  ICT solutions 
 ### Vision
 
 
-</div><!-- /.medium-8.columns -->
+<div class="row t60">
+    <div class="medium-6 columns b30">
+        <img src="{{ site.urlimg }}webdesign_screenshot_nixdorf.jpg" alt="">
+        <p> Website: Nixdorf Internatsberatung &amp; Schulberatung</p>
+    </div><!-- /.medium-6.columns -->
+
+    <div class="medium-6 columns b30">
+        <img src="{{ site.urlimg }}webdesign_screenshot_jcorneille.jpg" alt="">
+        <p>Website: <a href="http://jcorneille.de">Grafik Design Jeannette Corneille</a></p>
+    </div><!-- /.medium-6.columns -->
 </div><!-- /.row -->
 
-<!-- Team members -->
-{% if site.data.team-members.size > 0 %}
-<section class="team-members">
-  <h2>Our Team</h2>
-  <div class="grid-container">
-    {% for member in site.data.team-members %}
-    {% comment %}Check whether total no. of staff members is odd / even and structure final member accordingly{% endcomment %}
-    {% assign columnMod = forloop.length | modulo:2 %}
-    {% if columnMod == 0 %}
-      {% cycle '<div class="row">', '' %}
-      <!-- Team member card -->
-      {% include staff-card.html columnClass='one-half col' %}<!-- End team member card -->
 
-      {% cycle '', '</div>' %}
-    {% else %}
-      {% unless forloop.last == true %}
-        {% cycle '<div class="row">', '' %}
-        <!-- Team member card -->
-        {% include staff-card.html columnClass='one-half col' %}<!-- End team member card -->
+<div class="row t30">
+    <div class="medium-4 columns">
+        <img src="{{ site.urlimg }}webdesign_screenshot_stilwandel.jpg" alt="">
+        <p>Website: <a href="http://stilwandel-koeln.de">Stilwandel-Koeln.de</a></p>
+    </div><!-- /.medium-4.columns -->
 
-        {% cycle '', '</div>' %}
-      {% else %}
-      <!-- Team member card -->
-        {% include staff-card.html columnClass='one-half col final-col' %}<!-- End team member card -->
-      {% endunless %}
-    {% endif %}
-  {% endfor %}
-  </div>
-</section>
-{% endif %}<!-- End team members -->
+    <div class="medium-4 columns">
+        <img src="{{ site.urlimg }}webdesign_screenshot_tarnkappe.jpg" alt="">
+        <p>Website: <a href="http://tarnkarppe.info">Tarnkappe.info</a></p>
+    </div><!-- /.medium-4.columns -->
+
+    <div class="medium-4 columns">
+        <img src="{{ site.urlimg }}webdesign_screenshot_schriefer.jpg" alt="">
+        <p>Website: <a href="http://www.psychotherapie-schriefer.de/">Praxis für psychologische Psychotherapie Simone Schriefer</a></p>
+    </div><!-- /.medium-4.columns -->
+</div><!-- /.row -->
+
+
+
 
  [1]: http://kramdown.gettalong.org/converter/html.html#toc
  [2]: {{ site.url }}/blog/
